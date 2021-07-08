@@ -12,7 +12,8 @@ function init_template()
     // Registrar el MENU
     register_nav_menus(
             array(
-                'top_menu' => 'Menu  de Principal'
+                'top_menu' => 'Menu  de Principal',
+                'top_menu_secondary' => 'Menu secundario'
             )
         );
 }

@@ -59,8 +59,8 @@
                             // Posicion
                             'theme_location' => 'top_menu',
                             // clases del menu
-                            'menu_class' => 'menu-principal',
-                            'container_class' => 'container-menu',
+                            'menu_class' => 'd-flex-between texto-bold texto-naranja',
+                            'container_class' => 'menu-principal',
                         )
                     )
                 ?>
@@ -72,8 +72,17 @@
         </div>
         <div class="menu-secundario">
             <ul class="d-flex-between texto-bold">
-                <li>Blog</li>
-                <li>Contacto</li>
+            <?php 
+                    wp_nav_menu( 
+                        array(
+                            // Posicion
+                            'theme_location' => 'top_menu_secondary',
+                            // clases del menu
+                            'menu_class' => 'd-flex-between texto-bold',
+                            'container_class' => 'menu-principal',
+                        )
+                    )
+                ?>
             </ul>
         </div>
     </nav>
