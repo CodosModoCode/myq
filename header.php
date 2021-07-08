@@ -53,7 +53,7 @@
         </div>
         <div class="menu-principal">
             <ul class="d-flex-between texto-bold texto-naranja">
-            <?php 
+                <?php 
                     wp_nav_menu( 
                         array(
                             // Posicion
@@ -95,16 +95,32 @@
         </div>
         <div class="menu-principal">
             <ul class="d-flex-between texto-bold">
-                <li class="link-menu">Home</li>
-                <li class="link-menu">Productos</li>
-                <li class="link-menu">Nosotros</li>
-                <li class="link-menu">Eventos</li>
+            <?php 
+                    wp_nav_menu( 
+                        array(
+                            // Posicion
+                            'theme_location' => 'top_menu',
+                            // clases del menu
+                            'menu_class' => 'd-flex-between texto-bold texto-naranja',
+                            'container_class' => 'menu-principal',
+                        )
+                    )
+                ?>
             </ul>
         </div>
         <div class="menu-secundario">
             <ul class="d-flex-between texto-bold">
-                <li>Blog</li>
-                <li>Contacto</li>
+            <?php 
+                    wp_nav_menu( 
+                        array(
+                            // Posicion
+                            'theme_location' => 'top_menu_secondary',
+                            // clases del menu
+                            'menu_class' => 'd-flex-between texto-bold',
+                            'container_class' => 'menu-principal',
+                        )
+                    )
+                ?>
                 <img class="mx-5" src="src/img/IFood_logo.png" alt="">
             </ul>
         </div>

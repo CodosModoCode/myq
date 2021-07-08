@@ -44,3 +44,43 @@ function assets(){
 }
 
 add_action( 'wp_enqueue_scripts', 'assets' );
+
+
+// CREACION DEL CUSTON TYPE PARA PRODUCTOS DESTACADOS
+
+function productos_type(){
+
+    $labels = array(
+        'name'           => 'Productos',
+        'singular_name'  => 'Producto',
+        // define el nombre en el menú
+        'menu_name'      => 'Productos'
+    );
+    $args = array(
+        'label'          => 'productos',
+        'description'    => 'productos de platzi',
+        'labels'         => $labels,
+        // supports hace referencia a los skils que tendrá este custon type
+        'supports'      => array('title', 'editor', 'thumbnail', 'revisions'),
+        // Define el estado de publicación borrador false, publicadas true
+        'public'        =>true,
+        // define si el custon type puede usarse desde los menus
+        'show_in_menu' =>true,
+        // en qué posición se colocará en el menu
+        'menu_position' => 5,
+        // icono del custon type
+        // repositorio: https://developer.wordpress.org/resource/dashicons/#cart
+        'menu_icon' => 'dashicons-cart',
+        'can_export' => true,
+        // Puede hacerse un loop personalizado
+        'publicly_queryable' => true,
+        // hace que tenga una URL asignada
+        'rewrite' =>true,
+        // genera el editor de codigo gutember
+        'show_in_rest' => true,
+    );
+    // es la función que me crea el custon_type
+    register_post_type( 'producto', $args );
+}
+
+add_action( 'init', 'productos_type');
