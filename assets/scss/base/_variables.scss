@@ -1,0 +1,339 @@
+// Indice
+// 1- Display
+// 1.1 FLEX
+// 1.2 GRID
+$separacion : 16px;
+.contenedor-sm{
+    width: 60%;
+    margin: 0 auto;
+}
+.contenedor{
+    width:80%;
+    margin: 0 auto;
+}
+// --------------------------DISPLAY--------------------------//
+// --------------------------FLEX
+.d-flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.d-flex-centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.d-flex-column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+// ------------FLEX GAP
+
+// --------------------------GRID
+.d-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.d-grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.d-grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.d-grid-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.d-grid-5{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+// --------------------------GRID GAP
+.gap-1{
+    gap: $separacion;
+}
+.gap-2{
+    gap: $separacion*2;
+}
+.gap-3{
+    gap: $separacion*3;
+}
+.gap-4{
+    gap: $separacion*4;
+}
+.gap-5{
+    gap: $separacion*5;
+}
+// ------------------ NONE
+.d-none{
+    display: none;
+}
+
+// tamaños
+.w-50{
+    width: 50%;
+}
+.w-70{
+    width: 70%;
+}
+.w-30{
+    width: 30%;
+}
+//---------------------ICONOS---------------
+.icono-sm{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+// --------------------MARGENES----------------
+.m-1{
+    margin: $separacion;
+}
+.m-2{
+    margin: $separacion*2;
+}
+.m-3{
+    margin: $separacion*3;
+}
+.m-4{
+    margin: $separacion*4;
+}
+.m-5{
+    margin: $separacion*5;
+}
+// margenes superiores
+.mt-1{
+    margin-top: $separacion;
+}
+.mt-2{
+    margin-top: $separacion*2;
+}
+.mt-3{
+    margin-top: $separacion*3;
+}
+.mt-4{
+    margin-top: $separacion*4;
+}
+.mt-5{
+    margin-top: $separacion*5;
+}
+// margenes Left
+.ml-1{
+    margin-left: $separacion;
+}
+.ml-2{
+    margin-left: $separacion*2;
+}
+.ml-3{
+    margin-left: $separacion*3;
+}
+.ml-4{
+    margin-left: $separacion*4;
+}
+.ml-5{
+    margin-left: $separacion*5;
+}
+// margenes Right
+.mr-1{
+    margin-right: $separacion;
+}
+.mr-2{
+    margin-right: $separacion*2;
+}
+.mr-3{
+    margin-right: $separacion*3;
+}
+.mr-4{
+    margin-right: $separacion*4;
+}
+.mr-5{
+    margin-right: $separacion*5;
+}
+// margenes booton
+.mb-1{
+    margin-bottom: $separacion;
+}
+.mb-2{
+    margin-bottom: $separacion*2;
+}
+.mb-3{
+    margin-bottom: $separacion*3;
+}
+.mb-4{
+    margin-bottom: $separacion*4;
+}
+.mb-5{
+    margin-bottom: $separacion*5;
+}
+// margen vertical
+.my-1{
+    margin: $separacion 0;
+}
+.my-2{
+    margin: $separacion*2 0;
+}
+.my-3{
+    margin: $separacion*3 0;
+}
+.my-4{
+    margin: $separacion*4 0;
+}
+.my-5{
+    margin: $separacion*5 0;
+}
+// margen horizontal
+.mx-1{
+    margin: 0 $separacion;
+}
+.mx-2{
+    margin: 0 $separacion*2;
+}
+.mx-3{
+    margin: 0 $separacion*3;
+}
+.mx-4{
+    margin: 0 $separacion*4;
+}
+.mx-5{
+    margin: 0 $separacion*5;
+}
+// --------------------PADDING----------------
+// padding y
+.py-1{
+    padding: $separacion 0;
+}
+.py-2{
+    padding: $separacion*2 0;
+}
+.py-3{
+    padding: $separacion*3 0;
+}
+.py-4{
+    padding: $separacion*4 0;
+}
+.py-5{
+    padding: $separacion*5 0;
+}
+// padding y
+.px-1{
+    padding: 0 $separacion;
+}
+.px-2{
+    padding: 0 $separacion*2;
+}
+.px-3{
+    padding: 0 $separacion*3;
+}
+.px-4{
+    padding: 0 $separacion*4;
+}
+.px-5{
+    padding: 0 $separacion*5;
+}
+// 
+.p-1{
+    padding: $separacion;
+}
+.p-2{
+    padding: $separacion*2;
+}
+.p-3{
+    padding: $separacion*3;
+}
+.p-4{
+    padding: $separacion*4;
+}
+.p-5{
+    padding: $separacion*5;
+}
+// padding Top
+.pt-1{
+    padding-top: $separacion;
+}
+.pt-2{
+    padding-top: $separacion*2;
+}
+.pt-3{
+    padding-top: $separacion*3;
+}
+.pt-4{
+    padding-top: $separacion*4;
+}
+.pt-5{
+    padding-top: $separacion*5;
+}
+// padding left
+.pl-1{
+    padding-left: $separacion;
+}
+.pl-2{
+    padding-left: $separacion*2;
+}
+.pl-3{
+    padding-left: $separacion*3;
+}
+.pl-4{
+    padding-left: $separacion*4;
+}
+.pl-5{
+    padding-left: $separacion*5;
+}
+// padding left
+.pr-1{
+    padding-right: $separacion;
+}
+.pr-2{
+    padding-right: $separacion*2;
+}
+.pr-3{
+    padding-right: $separacion*3;
+}
+.pr-4{
+    padding-right: $separacion*4;
+}
+.pr-5{
+    padding-right: $separacion*5;
+}
+// padding bottom
+.pb-1{
+    padding-bottom: $separacion;
+}
+.pb-2{
+    padding-bottom: $separacion*2;
+}
+.pb-3{
+    padding-bottom: $separacion*3;
+}
+.pb-4{
+    padding-bottom: $separacion*4;
+}
+.pb-5{
+    padding-bottom: $separacion*5;
+}
+// ----------------BORDES
+.rounded{
+    border-radius: $separacion;
+}
+// ---------------OVERFLOW
+.overflow-hidden{
+    overflow: hidden;
+}
+// ---------------SOMBRAS
+.sombra-lg{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+// ---------------CURSORES
+.cursor-pointer{
+    cursor: pointer;
+}
+

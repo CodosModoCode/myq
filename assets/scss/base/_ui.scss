@@ -1,0 +1,24 @@
+.marco-magenta-sm{
+    background-color: $magenta;
+    border-radius: $separacion * .2;
+    display: inline-block;
+    padding: $separacion*.3 $separacion*.7;
+    color: $blanco;
+    margin-top: $separacion*.5;
+}
+.marco-amarillo-sm{
+    background-color: $amarillo;
+    border-radius: $separacion * .2;
+    display: inline-block;
+    padding: $separacion*.3 $separacion*.7;
+    color: $magenta;
+    margin-top: $separacion*.5;
+}
+.marco-gris-sm{
+    background-color: $gris;
+    border-radius: $separacion * .2;
+    display: inline-block;
+    padding: $separacion*.3 $separacion*.7;
+    color: $blanco;
+    margin-top: $separacion*.5;
+}

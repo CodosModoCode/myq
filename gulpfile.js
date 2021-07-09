@@ -28,7 +28,7 @@ function css() {
         .pipe( postcss([ autoprefixer(), cssnano() ]))
         .pipe( sourcemaps.write('.') )
         // .pipe( dest('./build/css') )
-        .pipe( dest('./css/hola.css') )
+        .pipe( dest('./build/css') )
 }
 
 function javascript() {
