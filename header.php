@@ -32,13 +32,13 @@
 <!-- REDE SOCIALES -->
 <div class="redes-sociales rounded">
     <div class="iconos-redes cursor-pointer m-1">
-        <img src="wp-content/themes/myq/build/img/facebook-8.png" alt="">
+        <img src=<?php echo $url . '/assets/img/facebook-8.png' ?> alt="">
     </div>
     <div class="iconos-redes cursor-pointer m-1">
-        <img src="wp-content/themes/myq/build/img/instagram-8.png" alt="">
+        <img src=<?php echo $url . '/assets/img/instagram-8.png' ?> alt="">
     </div>
     <div class="iconos-redes cursor-pointer m-1">
-        <img src="wp-content/themes/myq/build/img/whastapp-8.png" alt="">
+        <img src=<?php echo $url . '/assets/img/whastapp-8.png' ?> alt="">
     </div>
     
 </div>
@@ -92,7 +92,7 @@
     <nav class="navbar-fijo-Pc contenedor d-flex-between">
         <div class="logo-invisible"></div>
         <div class="logo">
-            <img src="wp-content/themes/myq/build/img/Logo_M&Q-8.png" alt="">
+            <img src=<?php echo $url . '/assets/img/Logo_M&Q-8.png' ?> alt="">
         </div>
         <div class="menu-principal">
             <ul class="d-flex-between texto-bold">
@@ -122,7 +122,7 @@
                         )
                     )
                 ?>
-                <img class="mx-5" src="src/img/IFood_logo.png" alt="">
+                <img class="mx-5" src=<?php echo $url . '/assets/img/IFood_logo.png' ?> alt="">
             </ul>
         </div>
     </nav>

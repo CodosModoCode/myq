@@ -14,9 +14,9 @@
                 </div>
             </div>
             <div class="logos-footer d-flex-centrado">
-                <img src="wp-content/themes/myq/build/img/facebook-8.png" alt="">
-                <img src="wp-content/themes/myq/build/img/instagram-8.png" alt="">
-                <img src="wp-content/themes/myq/build/img/whastapp-8.png" alt="">
+                <img src=<?php echo $url . '/assets/img/facebook-8.png' ?> alt="">
+                <img src=<?php echo $url . '/assets/img/instagram-8.png' ?> alt="">
+                <img src=<?php echo $url . '/assets/img/whastapp-8.png' ?> alt="">
             </div>
         </div>
         <div class="footer-marketi texto-sm sombra-lg mt-1 d-flex-between p-1 rounded">
