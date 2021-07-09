@@ -1,5 +1,7 @@
 <?php get_header(  ) ?>
 <?php $url = get_template_directory_uri(  ); ?>
+<!-- slider -->
+<?php include ('templates/template_slider.php') ?>
 <!-- Productos destacados -->
 <?php include ('templates/template_productosDestacados.php') ?>
 <!-- sedes -->
