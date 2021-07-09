@@ -56,7 +56,10 @@
             }
             ?>
         </div>
-        hola
+        <hr class="texto-naranja my-2" style="opacity: .3;">
+        <div class="bg-magenta p-2 rounded">
+            <h3 class="texto-blanco cursor-pointer">Atendemos tus eventos familiares y empresariales</h3>
+        </div>
     </div>
 </div>
 <?php get_footer(); ?>
