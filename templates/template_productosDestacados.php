@@ -20,8 +20,8 @@
             while($productos->have_posts()){
                 $productos->the_post(  );
                 ?>
-                <a class="text-dark" href="<?php the_permalink( ) ?>">
                 <div class="card-producto-destacado">
+                    <a class="text-dark" href="<?php the_permalink( ) ?>">
                     <!-- Icono destacado -->
                     <div class="icono-destacado icono-sm bg-amarillo d-flex-centrado">
                         <img src=<?php echo $url . '/assets/img/Logo_favoritos-8.png' ?> alt="">
@@ -33,8 +33,8 @@
                     <div class="py-1 mx-2 card-titulo texto-naranja texto-centrado">
                     <?php the_title(  ) ?>
                     </div>
-                </div>
                 </a> 
+                </div>
                 <?php
             }
         }
