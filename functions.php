@@ -84,3 +84,40 @@ function productos_type(){
 }
 
 add_action( 'init', 'productos_type');
+
+// ------------- CREAR WIDGETS-------------
+
+function footer_izq(){
+    register_sidebar( 
+        array(
+            'name' => 'footer izquierda',
+            'id'            => 'footer_izq',
+            'description'   => 'widget para la zona izquierda del título',
+            // el widget consta de 2 elementos: titulo y contenido (before)
+            'before_title' => '<p>',
+            'after_title' => '</p>',
+            // contenido del widget
+            'before_widget' => '<div id="%1$s" class="%2$s">',
+            'after_widget' => '</div>'
+        )
+    );
+}
+function footer_centro(){
+    register_sidebar( 
+        array(
+            'name' => 'footer centro',
+            'id'            => 'footer_centro',
+            'description'   => 'widget para la zona izquierda del título',
+            // el widget consta de 2 elementos: titulo y contenido (before)
+            'before_title' => '<p>',
+            'after_title' => '</p>',
+            // contenido del widget
+            'before_widget' => '<div id="%1$s" class="%2$s">',
+            'after_widget' => '</div>'
+        )
+    );
+}
+
+
+add_action( 'widgets_init', 'footer_izq' );
+add_action( 'widgets_init', 'footer_centro' );

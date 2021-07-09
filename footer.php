@@ -4,14 +4,12 @@
         <div class="secciones-footer">
             <div class="">
                 <div class="texto-centrado texto-negro-light">
-                    <h5>Contacto</h5>
-                    <p>322 5293155</p>
-                </div>
+                <?php dynamic_sidebar( 'footer_izq') ?>
             </div>
-            <div class="">
-                <div class="texto-centrado texto-negro-light">
-                    <h5>Oficina</h5>
-                    <p>322 5293155</p>
+        </div>
+        <div class="">
+            <div class="texto-centrado texto-negro-light">
+                    <?php dynamic_sidebar( 'footer_centro') ?>
                 </div>
             </div>
             <div class="logos-footer d-flex-centrado">

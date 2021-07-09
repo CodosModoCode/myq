@@ -11,12 +11,13 @@
 </head>
 <body>
 <!-- SMART BAR -->
+<?php $url = get_template_directory_uri(  ); ?>
 <div class="smart-Bar bg-magenta">
     <div class="contenedor d-flex-between">
         <div class="texto-blanco d-flex-centrado">
             <div class="">Domicilios:</div>
             <div class="logo-ifood mx-1">
-                <img src="src/img/IFood_logo.png" alt="">
+                <img src= <?php echo $url . '/assets/img/IFood_logo.png' ?> alt="">
             </div>
         </div>
         <div class="texto-amarillo d-flex-centrado">
@@ -150,7 +151,8 @@
             </div>
             <div class="imagenes-slider">
             <!-- ./assets/img/M&Q_1.jpg -->
-                <img src= "wp-content/themes/myq/build/img/M&Q_1.jpg' ?>" alt="">
+                <img src= <?php echo $url . '/assets/img/M&Q_1.jpg' ?> alt="">
+                <!-- <img src= "wp-content/themes/myq/build/img/M&Q_1.jpg' ?>" alt=""> -->
             </div>
         </div>
         <!-- FIN IMAGENES SLIDER -->
