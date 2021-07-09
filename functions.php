@@ -35,7 +35,7 @@ function assets(){
     // con wp_enqueue_style se carga la hoja de estilos que esta en la raiz de la carpeta
     // con get_stylesheets_uri de carga la URL y en array se añade las dependecias
     // regustradas anteriormente
-    wp_enqueue_style( 'estilos', get_template_directory_uri().'/assets/css/app.css', array('fuente', 'normalize'), '1.22', 'all' );
+    wp_enqueue_style( 'estilos', get_template_directory_uri().'/build/css/app.css', array('fuente', 'normalize'), '1.22', 'all' );
 
     // ----------REGISTRAR SCRIPS-------//
 

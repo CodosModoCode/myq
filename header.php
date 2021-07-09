@@ -31,13 +31,13 @@
 <!-- REDE SOCIALES -->
 <div class="redes-sociales rounded">
     <div class="iconos-redes cursor-pointer m-1">
-        <img src="src/img/facebook-8.png" alt="">
+        <img src="wp-content/themes/myq/build/img/facebook-8.png" alt="">
     </div>
     <div class="iconos-redes cursor-pointer m-1">
-        <img src="src/img/instagram-8.png" alt="">
+        <img src="wp-content/themes/myq/build/img/instagram-8.png" alt="">
     </div>
     <div class="iconos-redes cursor-pointer m-1">
-        <img src="src/img/whastapp-8.png" alt="">
+        <img src="wp-content/themes/myq/build/img/whastapp-8.png" alt="">
     </div>
     
 </div>
@@ -49,7 +49,7 @@
     <nav class="navbar-Pc contenedor d-flex-between">
         
         <div class="logo">
-            <img src="src/img/Logo_M&Q-8.png" alt="">
+            <img src="wp-content/themes/myq/build/img/Logo_M&Q-8.png" alt="">
         </div>
         <div class="menu-principal">
             <ul class="d-flex-between texto-bold texto-naranja">
@@ -91,7 +91,7 @@
     <nav class="navbar-fijo-Pc contenedor d-flex-between">
         <div class="logo-invisible"></div>
         <div class="logo">
-            <img src="src/img/Logo_M&Q-8.png" alt="">
+            <img src="wp-content/themes/myq/build/img/Logo_M&Q-8.png" alt="">
         </div>
         <div class="menu-principal">
             <ul class="d-flex-between texto-bold">
@@ -149,7 +149,8 @@
                 <div class="control"></div>
             </div>
             <div class="imagenes-slider">
-                <img src="src/img/M&Q_1.jpg" alt="">
+            <!-- ./assets/img/M&Q_1.jpg -->
+                <img src= "wp-content/themes/myq/build/img/M&Q_1.jpg' ?>" alt="">
             </div>
         </div>
         <!-- FIN IMAGENES SLIDER -->

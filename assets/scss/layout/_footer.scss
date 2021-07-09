@@ -1,0 +1,24 @@
+.footer{
+    .secciones-footer{
+        @include d-grid(3, $separacion);
+    }
+    .footer-marketi{
+        background-color: darken($color: $negro, $amount: 10);
+        color: lighten($color: $negro, $amount: 20);
+        
+        .marketi-logo{
+            transition: .2s ease-in-out;
+
+            &:hover{
+                transform: scale(1.06);
+            }
+        }
+    }
+    .logos-footer{
+        img{
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+        }
+    }
+}

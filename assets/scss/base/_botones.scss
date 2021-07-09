@@ -1,0 +1,53 @@
+.btn-magenta{
+    background-color: $magenta;
+    padding: $separacion * .6 $separacion *2;
+    display: inline;
+    font-size: $separacion;
+    color: $blanco;
+    text-align: center;
+    transition: .1s ease-in;
+    cursor: pointer;
+    @include borde;
+
+    &:hover{
+        background-color: $negro;
+        color: $amarillo;
+        transform: scale(1.03);
+    }
+}
+.btn-negro{
+    background-color: $negro;
+    padding: $separacion * .6 $separacion *2;
+    display: inline;
+    display: flex;
+    justify-content: center;
+    font-size: $separacion;
+    color: $blanco;
+    transition: .1s ease-in;
+    cursor: pointer;
+    @include borde;
+
+    &:hover{
+        background-color: $amarillo;
+        color: $negro;
+        transform: scale(1.03);
+    }
+}
+.btn-amarillo{
+    background-color: $amarillo;
+    padding: $separacion * .6 $separacion *2;
+    display: inline;
+    display: flex;
+    justify-content: center;
+    font-size: $separacion;
+    color: $magenta;
+    transition: .1s ease-in;
+    cursor: pointer;
+    @include borde;
+
+    &:hover{
+        background-color: $negro;
+        color: $amarillo;
+        transform: scale(1.03);
+    }
+}

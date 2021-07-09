@@ -1,0 +1,55 @@
+// colores
+.texto-amarillo{
+    color: $amarillo;
+}
+.texto-blanco{
+    color: $blanco;
+}
+.texto-magenta{
+    color: $magenta;
+}
+.texto-negro{
+    color: $negro;
+}
+.texto-negro-light{
+    color: lighten($color: $negro, $amount: 40);
+}
+.texto-gris{
+    color: $gris;
+}
+.texto-naranja{
+    color: $naranja;
+}
+// pesos
+.texto-bold{
+    font-weight: 600;
+}
+.texto-extrabold{
+    font-weight: 800;
+}
+// tamaños
+.texto-sm{
+    font-size: $separacion * .8;
+}
+.texto-md{
+    font-size: $separacion * 1.5;
+}
+.texto-lg{
+    font-size: $separacion * 2;
+}
+.texto-bg{
+    font-size: $separacion * 3;
+}
+.texto-extrabg{
+    font-size: $separacion * 4;
+}
+// alineación
+.texto-izq{
+    text-align: left;
+}
+.texto-der{
+    text-align: right;
+}
+.texto-centrado{
+    text-align: center;
+}

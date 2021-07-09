@@ -15,15 +15,15 @@
                 </div>
             </div>
             <div class="logos-footer d-flex-centrado">
-                <img src="src/img/facebook-8.png" alt="">
-                <img src="src/img/instagram-8.png" alt="">
-                <img src="src/img/whastapp-8.png" alt="">
+                <img src="wp-content/themes/myq/build/img/facebook-8.png" alt="">
+                <img src="wp-content/themes/myq/build/img/instagram-8.png" alt="">
+                <img src="wp-content/themes/myq/build/img/whastapp-8.png" alt="">
             </div>
         </div>
         <div class="footer-marketi texto-sm sombra-lg mt-1 d-flex-between p-1 rounded">
             <div class="">Todos los derechos reservados | M&Q - Únicos en Sabor | 2021 | contacto@m&q.com</div>
             <div class="marketi-logo cursor-pointer">
-                <img src="src/img/Logo-marketi.png" class="w-50" alt="">
+                <img src="wp-content/themes/myq/build/img/Logo-marketi.png" class="w-50" alt="">
             </div>
         </div>
     </div>

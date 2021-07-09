@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'm&q';
+    src: url('/src/fonts/BrandonGrotesque-Medium.ttf');
+}
+a{
+    text-decoration: none;
+    color: inherit;
+} 
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+body{
+    // font-family: 'm&q';
+    font-family: 'Sarabun', sans-serif; 
+    font-size: $separacion *1.1 ;
+    background-color: $beige;
+}
+ul, li{
+    list-style: none;
+    margin: 0px;
+    padding: 0px; 
+}
+img{
+    width: 100%;
+}
+h1, h2, h3, h4{
+    margin: 0;
+    padding: 0;
+}
+.mover-menu{
+    top:0px !important;
+}
+// stylos del menú fijo
+// .fijo {
+//     position: fixed !important;
+//     display: flex;
+//     justify-content: space-around;
+//     top: 0;
+//     width: 100%;
+//     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+//     box-sizing: border-box;
+//     padding: $separacion $separacion*5;
+//     background-color: $magenta;
+//     z-index: 20000 !important;
+// }
+// .logo-fijo{
+//     position: absolute;
+//     top: 0;
+//     left: 100px;
+//     width: 50px !important;
+//     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+// }
