@@ -8,6 +8,7 @@
         border-radius: $separacion;
         padding: $separacion*2;
         box-sizing: border-box;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.192));
     }
     .contenido-sedes{
         display: grid;
@@ -15,12 +16,13 @@
         gap: $separacion*2;
     }
     .telefono-sede{
-        background-color: $negro;
-        color: $blanco;
+        background-color: $amarillo;
+        color: $negro;
         border-radius: $separacion;
         padding: $separacion*.5 $separacion*1.5;
         margin: $separacion 0;
         display: inline-block;
+        // font-size: 200px;
     }
     h1{
         color: $magenta;
@@ -30,6 +32,6 @@
     }
     img{
         border-radius: $separacion;
-        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.425));
+        
     }
 }
