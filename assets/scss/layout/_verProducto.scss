@@ -1,0 +1,23 @@
+.informacion-producto{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    margin-top: $separacion*1.5;
+
+    .vegetariano{
+        background-color: lightgreen;
+    }
+}
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $separacion*1.5;
+
+    img{
+        width: 100%;
+        height: auto;
+        border-radius: $separacion;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.205));
+    }
+}

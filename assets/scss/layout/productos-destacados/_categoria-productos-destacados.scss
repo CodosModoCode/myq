@@ -1,0 +1,33 @@
+.post-catergorias{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $separacion*2;
+
+    .post-item{
+        background-color: lighten($color: $beige, $amount: 10);
+        border-radius: $separacion;
+        transition: .2s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $amarillo;
+            filter: drop-shadow(1px 1px 20px rgba(0, 0, 0, 0.199));
+            transform: scale(1.01);
+        }
+    }
+    h2{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: $naranja;
+        font-weight: 300;
+        margin: $separacion 0;
+        font-size: $separacion*1.2;
+        padding: 0 $separacion*2;
+    }
+    img{
+        max-width:100%;
+        height:auto;
+        border-radius: $separacion $separacion 0 0;
+    }
+}
