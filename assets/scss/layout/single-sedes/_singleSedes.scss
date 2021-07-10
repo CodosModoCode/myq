@@ -1,0 +1,35 @@
+.single-sedes{
+    // background-color: red !important;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: $separacion;
+    .informacion-sede{
+        background-color: lighten($color: $beige, $amount: 10);
+        border-radius: $separacion;
+        padding: $separacion*2;
+        box-sizing: border-box;
+    }
+    .contenido-sedes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $separacion*2;
+    }
+    .telefono-sede{
+        background-color: $negro;
+        color: $blanco;
+        border-radius: $separacion;
+        padding: $separacion*.5 $separacion*1.5;
+        margin: $separacion 0;
+        display: inline-block;
+    }
+    h1{
+        color: $magenta;
+    }
+    p{
+        margin: 0;
+    }
+    img{
+        border-radius: $separacion;
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.425));
+    }
+}
