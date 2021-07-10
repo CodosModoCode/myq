@@ -121,3 +121,65 @@ function footer_centro(){
 
 add_action( 'widgets_init', 'footer_izq' );
 add_action( 'widgets_init', 'footer_centro' );
+
+// CUSTON TYPE SEDES
+if ( ! function_exists('cpt_sedes') ) {
+
+    // Register Custom Post Type
+    function cpt_sedes() {
+    
+        $labels = array(
+            'name'                  => _x( 'sedes', 'Post Type General Name', 'text_domain' ),
+            'singular_name'         => _x( 'sede', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'             => __( 'Sedes', 'text_domain' ),
+            'name_admin_bar'        => __( 'Sedes', 'text_domain' ),
+            'archives'              => __( 'Archivo de Sedes', 'text_domain' ),
+            'attributes'            => __( 'Atributos de sede', 'text_domain' ),
+            'parent_item_colon'     => __( 'Sede padre', 'text_domain' ),
+            'all_items'             => __( 'Todas las Sedes', 'text_domain' ),
+            'add_new_item'          => __( 'Añadir nueva Sede', 'text_domain' ),
+            'add_new'               => __( 'Añadir Sede', 'text_domain' ),
+            'new_item'              => __( 'Nueva Sede', 'text_domain' ),
+            'edit_item'             => __( 'Editar Sede', 'text_domain' ),
+            'update_item'           => __( 'Actualizar Sede', 'text_domain' ),
+            'view_item'             => __( 'Ver Sede', 'text_domain' ),
+            'view_items'            => __( 'Ver Sedes', 'text_domain' ),
+            'search_items'          => __( 'Buscar Sedes', 'text_domain' ),
+            'not_found'             => __( 'No Encontrado', 'text_domain' ),
+            'not_found_in_trash'    => __( 'No encontrado en papelera', 'text_domain' ),
+            'featured_image'        => __( 'Imagen Destacada', 'text_domain' ),
+            'set_featured_image'    => __( 'Configurar Imagen Destacada', 'text_domain' ),
+            'remove_featured_image' => __( 'Remover Imagen Destacada', 'text_domain' ),
+            'use_featured_image'    => __( 'Usar como imagen destacada', 'text_domain' ),
+            'insert_into_item'      => __( 'Intertar en la Sede', 'text_domain' ),
+            'uploaded_to_this_item' => __( 'Actualizar en esta sede', 'text_domain' ),
+            'items_list'            => __( 'Listado de Sedes', 'text_domain' ),
+            'items_list_navigation' => __( 'Lista Navegable de Sedes', 'text_domain' ),
+            'filter_items_list'     => __( 'Filtro de lista de Sedes', 'text_domain' ),
+        );
+        $args = array(
+            'label'                 => __( 'sede', 'text_domain' ),
+            'description'           => __( 'Diferentes sedes con la que cuenta m&q', 'text_domain' ),
+            'labels'                => $labels,
+            'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes' ),
+            'taxonomies'            => array( 'category', 'post_tag' ),
+            'hierarchical'          => false,
+            'public'                => true,
+            'show_ui'               => true,
+            'show_in_menu'          => true,
+            'menu_position'         => 5,
+            'menu_icon'             => 'dashicons-store',
+            'show_in_admin_bar'     => true,
+            'show_in_nav_menus'     => true,
+            'can_export'            => true,
+            'has_archive'           => true,
+            'exclude_from_search'   => false,
+            'publicly_queryable'    => true,
+            'capability_type'       => 'page',
+        );
+        register_post_type( 'sedes', $args );
+    
+    }
+    add_action( 'init', 'cpt_sedes', 0 );
+    
+    }

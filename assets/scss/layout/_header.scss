@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .header-pc{
     background-color: $beige;
     position: relative;
@@ -139,7 +141,7 @@
                 bottom: $separacion;
                 left: $separacion;
                 background-color: $amarillo;
-                border-radius: $separacion / .8;
+                border-radius: math.div($separacion, .8);
                 padding: $separacion * .3;
 
                     .control{
