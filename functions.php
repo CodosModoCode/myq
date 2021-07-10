@@ -177,6 +177,9 @@ if ( ! function_exists('cpt_sedes') ) {
             'exclude_from_search'   => false,
             'publicly_queryable'    => true,
             'capability_type'       => 'page',
+            // genera el editor de codigo gutember
+            'show_in_rest' => true,
+
         );
         register_post_type( 'sedes', $args );
     

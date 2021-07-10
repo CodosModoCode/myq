@@ -31,7 +31,12 @@
         margin: 0;
     }
     img{
-        border-radius: $separacion;
-        
+        border-radius: $separacion !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+    figure{
+        padding: $separacion 0;
+        margin: 0 !important;
     }
 }
