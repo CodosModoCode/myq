@@ -29,6 +29,6 @@
 </footer>
 <?php wp_footer() ?>
 <!-- FIN FOOTER -->
-<script src="build/js/bundle.min.js"></script>
+<script src= <?php echo $url . '/build/js/bundle.min.js' ?>></script>
 </body>
 </html>

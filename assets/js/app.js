@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function navegacionFija() {
     
     const menuFijo = document.querySelector('.navbar-fijo-Pc');
+    const logo = document.querySelector('.logo');
+    console.log(logo);
     console.log(menuFijo);
     const observer = new IntersectionObserver( function(entries) {
         if(entries[0].isIntersecting) {
@@ -17,7 +19,7 @@ function navegacionFija() {
         }
     });
 
-    observer.observe(document.querySelector('.boton-ver-catalogo'));
+    observer.observe(document.querySelector('.logo'));
 }
 
 // function scrollNav() {

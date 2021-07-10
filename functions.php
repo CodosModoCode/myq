@@ -65,6 +65,7 @@ function productos_type(){
         // Define el estado de publicación borrador false, publicadas true
         'public'        =>true,
         // define si el custon type puede usarse desde los menus
+        'taxonomies'            => array( 'category', 'post_tag' ),
         'show_in_menu' =>true,
         // en qué posición se colocará en el menu
         'menu_position' => 5,
@@ -183,3 +184,16 @@ if ( ! function_exists('cpt_sedes') ) {
     add_action( 'init', 'cpt_sedes', 0 );
     
     }
+    // AGREGAR LAS TAXONOMIAS DE LOS CUSTON TYPE AL LOOP DE TAXONONIAS DE WORDPRESS
+
+    function add_cpt_to_loop( $query ) {
+        if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+        
+        // Get all your post types
+        $post_types = get_post_types();
+        
+        $query->set( 'post_type', $post_types );
+        return $query;
+        }
+        }
+        add_filter( 'pre_get_posts', 'add_cpt_to_loop' );
