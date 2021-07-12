@@ -17,4 +17,7 @@
             font-size: $separacion*2;
         }
     }
+    @include phone{
+        display: none;
+    }
 }

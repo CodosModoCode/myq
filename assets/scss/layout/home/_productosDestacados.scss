@@ -13,14 +13,28 @@
     .titulo{
         margin: $separacion *2;
     }
+    .contendor-productos{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        // background-color: #000;
+        grid-template-columns: repeat(4, 1fr);
+
+        @include phone{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: $separacion;
+            padding: 0 $separacion;
+            font-size: $separacion;
+        }
+    }
     .card-producto-destacado{
         border-radius: $separacion;
         box-shadow: 0px 3.3772px 42.215px rgba(0, 0, 0, 0.3);
-        width: 20%;
-        position: relative;
-        // // overflow: hidden;
         // padding-bottom: $separacion *1.5;
         transition: .2s ease-in-out;
+        position: relative;
         cursor: pointer;
         margin: 0 $separacion;
 
@@ -55,7 +69,8 @@
             overflow: hidden;
                 
                 img{
-                    width: 100%;
+                    min-width: 100%;
+                    height: auto;
                     // min-height: 300px;
                 }
 
@@ -96,5 +111,9 @@
             }
 
         }
+        @include phone{
+            margin: 0;
+        }
     }
+    
 }

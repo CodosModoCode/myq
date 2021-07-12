@@ -21,7 +21,7 @@
 <div class="smart-Bar bg-magenta">
     <div class="informacion-Pedidos contenedor d-flex-between">
         <div class="domicilios-ifood texto-blanco">
-            <div class="">Domicilios:</div>
+            <div class="titulo">Domicilios:</div>
             <div class="logo-ifood mx-1">
                 <img src= <?php echo $url . '/assets/img/IFood_logo.png' ?> alt="">
             </div>
@@ -29,7 +29,7 @@
  
         <div class="pedidos">
             <p class="texto-amarillo">¿Necesitas un pedido grande? Comunícate al:</p>
-            <div class="texto-blanco texto-extrabold"><i class="fas fa-phone"> </i> 322 529 31 55</div>
+            <div class="telefono texto-blanco texto-extrabold"><i class="fas fa-phone"> </i> 322 529 31 55</div>
         </div>   
     </div>
 </div>
@@ -48,6 +48,16 @@
 </div>
 <!-- FIN REDE SOCIALES -->
 <!-- FIN SMART BAR -->
+<!-- HEADER RESPONSIVE -->
+<div class="header-responsive">
+    <figure class="logo">
+        <img src=<?php echo $url . '/assets/img/Logo_M&Q-8.png' ?> alt="">
+    </figure>
+    <div class="menu">
+        <i class="fas fa-bars"></i>
+    </div>
+</div>
+<!-- FIN HEADER RESPONSIVE -->
 <!-- HEADER -->
 <header class="header-pc">
     <!-- NAV BAR PC -->

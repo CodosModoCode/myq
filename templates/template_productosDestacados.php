@@ -3,7 +3,7 @@
     <div class="titulo texto-md texto-negro texto-centrado">
     <i class="fas fa-star"></i> Nuestros Productos Destacados
     </div>
-    <div class="contenedor d-flex-centrado">
+    <div class="contendor-productos">
 
         <?php
             $arg = array(

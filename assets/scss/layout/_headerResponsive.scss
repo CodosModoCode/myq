@@ -1,0 +1,19 @@
+.header-responsive{
+    background-color: $amarillo;
+    margin: 0px;
+    padding: $separacion;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .logo{
+        margin: 0px;
+        max-width: 60px;
+    }
+    .menu{
+        color: $magenta;
+        font-size: $separacion*2;
+    }
+
+}

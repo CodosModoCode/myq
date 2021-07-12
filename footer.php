@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="footer-marketi texto-sm sombra-lg mt-1 d-flex-between p-1 rounded">
-            <div class="">Todos los derechos reservados | M&Q - Únicos en Sabor | 2021 | contacto@m&q.com</div>
+            <p class="">Todos los derechos reservados | M&Q - Únicos en Sabor | 2021 | contacto@m&q.com</p>
             <div class="marketi-logo cursor-pointer">
                 <img src=<?php echo $url . '/assets/img/Logo-marketi.png' ?> alt="" class="w-50">
             </div>

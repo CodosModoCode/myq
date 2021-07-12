@@ -3,6 +3,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: $separacion*2;
 
+   
+
     .post-item{
         background-color: lighten($color: $beige, $amount: 10);
         border-radius: $separacion;

@@ -28,6 +28,9 @@
             transition: .3s ease-in-out;
             animation-delay: .1s;
         }
+        @include phone {
+            display: none;
+        }
     }
     .copy-eventos{
         display: flex;
@@ -53,5 +56,9 @@
             transform: scale(1.05);
             transform: translateX(30px);
         }
+    }
+    @include phone{
+        display: flex;
+        flex-direction: column;
     }
 }
