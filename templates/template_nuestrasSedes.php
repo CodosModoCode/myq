@@ -1,7 +1,7 @@
 <!-- NUESTRAS SEDES -->
 <div class="nuestras-sedes mb-4">
     <div class="contenedor nuestras-sedes-items py-3">
-        <div class="titulo-sedes titulo texto-md texto-amarillo texto-centrado">Nuestras Sedes</div>
+        <div class="titulo-sedes titulo texto-md texto-amarillo texto-centrado"><i class="fas fa-map-marker-alt"></i> Nuestras Sedes</div>
 
         <?php
             $arg = array(

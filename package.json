@@ -28,5 +28,8 @@
     "gulp-terser-js": "^5.2.2",
     "gulp-webp": "^4.0.1",
     "postcss": "^8.1.7"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
   }
 }

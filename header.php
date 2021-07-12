@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preload" href="src/fonts/BrandonGrotesque-Medium.woff" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="build/css/app.css">
-
+    <!-- font awesome -->
+    <?php  $url = get_template_directory_uri(  ); ?>
+    <!-- Our project just needs Font Awesome solid + brand -->
+    <script defer src=<?php echo $url . '/node_modules/@fortawesome/fontawesome-free/js/brands.js'?>></script>
+    <script defer src=<?php echo $url . '/node_modules/@fortawesome/fontawesome-free/js/solid.js'?>></script>
+    <script defer src=<?php echo $url . '/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js'?>></script>
+    <!-- Font Awesome -->
     <?php wp_head() ?>
 </head>
 <body>
@@ -22,7 +28,7 @@
         </div>
         <div class="texto-amarillo d-flex-centrado">
             <div class="mx-1">¿Necesitas un pedido grande? Comunícate al:</div>
-            <div class="texto-blanco texto-extrabold">322 529 31 55</div>
+            <div class="texto-blanco texto-extrabold"><i class="fas fa-phone"> </i> 322 529 31 55</div>
             <div class="icono-telefono ml-1">
                 <img src="src/img/telefono_icon-8.png" alt="">
             </div>
@@ -31,14 +37,14 @@
 </div>
 <!-- REDE SOCIALES -->
 <div class="redes-sociales rounded">
-    <div class="iconos-redes cursor-pointer m-1">
-        <img src=<?php echo $url . '/assets/img/facebook-8.png' ?> alt="">
+    <div class="iconos-redes d-flex-centrado texto-magenta cursor-pointer m-1">
+        <i class="icono fab fa-facebook"></i>
     </div>
-    <div class="iconos-redes cursor-pointer m-1">
-        <img src=<?php echo $url . '/assets/img/instagram-8.png' ?> alt="">
+    <div class="iconos-redes d-flex-centrado texto-magenta cursor-pointer m-1">
+        <i class="icono fab fa-instagram"></i>
     </div>
-    <div class="iconos-redes cursor-pointer m-1">
-        <img src=<?php echo $url . '/assets/img/whastapp-8.png' ?> alt="">
+    <div class="iconos-redes d-flex-centrado texto-magenta cursor-pointer m-1">
+        <i class="icono fab fa-whatsapp"></i>
     </div>
     
 </div>

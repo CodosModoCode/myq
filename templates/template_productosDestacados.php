@@ -1,7 +1,7 @@
 <!-- PRODUCTOS DESTACADOS -->
 <section class="productos-destacados">
     <div class="titulo texto-md texto-negro texto-centrado">
-        Nuestros Productos Destacados
+    <i class="fas fa-star"></i> Nuestros Productos Destacados
     </div>
     <div class="contenedor d-flex-centrado">
 
@@ -9,7 +9,7 @@
             $arg = array(
                 // nombre del post type creado en function.php
                 'post_type'             => 'producto',
-                'post_per_page'         => -1,
+                'posts_per_page'         => 4,
                 'order'                 => 'ASC',
                 'orderby'               => 'date,'
             );
@@ -42,7 +42,16 @@
         ?>
         
     </div>
-    <!-- boton ver todos los productos -->
-    <div class="btn-magenta mt-3">!Conoce nuestros productos Únicos en Sabor¡</div>
+    <?php
+    // obtener el link de la categoria
+    // obtiene el id de una categoria con su nombre
+    $category_id = get_cat_ID( 'Productos Destacados' );
+    // Obtiene el link de dicha categoría
+    $category_link = get_category_link( $category_id );
+    ?>
+
+    <div class="btn-magenta mt-3">
+        <!-- se linkea al link generado -->
+        <a href="<?php echo $category_link ; ?>">!Conoce nuestros productos Únicos en Sabor¡</a></div>
 </section>
 <!-- FIN PRODUCTOS DESTACADOS -->
