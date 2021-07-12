@@ -19,19 +19,17 @@
 <!-- SMART BAR -->
 <?php $url = get_template_directory_uri(  ); ?>
 <div class="smart-Bar bg-magenta">
-    <div class="contenedor d-flex-between">
-        <div class="texto-blanco d-flex-centrado">
+    <div class="informacion-Pedidos contenedor d-flex-between">
+        <div class="domicilios-ifood texto-blanco">
             <div class="">Domicilios:</div>
             <div class="logo-ifood mx-1">
                 <img src= <?php echo $url . '/assets/img/IFood_logo.png' ?> alt="">
             </div>
         </div>
-        <div class="texto-amarillo d-flex-centrado">
-            <div class="mx-1">¿Necesitas un pedido grande? Comunícate al:</div>
+ 
+        <div class="pedidos">
+            <p class="texto-amarillo">¿Necesitas un pedido grande? Comunícate al:</p>
             <div class="texto-blanco texto-extrabold"><i class="fas fa-phone"> </i> 322 529 31 55</div>
-            <div class="icono-telefono ml-1">
-                <img src="src/img/telefono_icon-8.png" alt="">
-            </div>
         </div>   
     </div>
 </div>
