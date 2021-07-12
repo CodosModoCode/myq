@@ -49,11 +49,28 @@
 <!-- FIN REDE SOCIALES -->
 <!-- FIN SMART BAR -->
 <!-- HEADER RESPONSIVE -->
+<div class="menu-responsive">
+    <ul>
+        <div class="btn-negro cerrar-menu"><i class="fas fa-times"></i></div>
+        <?php 
+            wp_nav_menu( 
+                array(
+                    // Posicion
+                    'theme_location' => 'top_menu',
+                    // clases del menu
+                    'menu_class' => 'd-flex-between texto-bold texto-naranja',
+                    'container_class' => 'menu-principal',
+                )
+            )
+        ?>
+    </ul>
+</div>
 <div class="header-responsive">
     <figure class="logo">
         <img src=<?php echo $url . '/assets/img/Logo_M&Q-8.png' ?> alt="">
     </figure>
-    <div class="menu">
+    <h3 class="texto-magenta texto-bold"><i class="fas fa-phone"></i> 322 529 31 55</h3>
+    <div id="boton-menu-responsive" class="cursor-pointer menu" value="holaaa">
         <i class="fas fa-bars"></i>
     </div>
 </div>
@@ -63,7 +80,7 @@
     <!-- NAV BAR PC -->
     <nav class="navbar-Pc contenedor d-flex-between">
         
-        <div class="logo">
+        <div class="logo-menu">
             <img src=<?php echo $url . '/assets/img/Logo_M&Q-8.png' ?> alt="">
         </div>
         <div class="menu-principal">

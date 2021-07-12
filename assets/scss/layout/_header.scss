@@ -69,16 +69,17 @@
             }
             
         }
-        @include phone{
+        @include  phone{
             display: none;
         }
+        
     }
         // nav bar
         .navbar-Pc{
             position: relative;
             z-index: 1;
             // padding: $separacion 0;
-            .logo{
+            .logo-menu{
                 background-color: $amarillo;
                 width: 130px;
                 border-radius: 0 0 $separacion $separacion;
@@ -129,6 +130,7 @@
         @include d-grid(2, $separacion *6);
 
         @include phone{
+            margin-top: 80px;
             @include d-grid(1, 0px);
         }
 
@@ -147,7 +149,13 @@
                 @include phone{
                     text-align: center;
                     font-size: $separacion*2.5;
+                    margin: $separacion 0;
                 }
+            }
+        }
+        p{
+            @include phone{
+                margin-bottom: $separacion;
             }
         }
         // imagenes slider

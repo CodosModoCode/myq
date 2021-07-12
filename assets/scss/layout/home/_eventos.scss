@@ -37,6 +37,17 @@
         flex-direction: column;
         justify-content: space-around;
         padding: $separacion $separacion*2;
+
+        .titulo{
+            @include phone{
+                margin-top: $separacion;
+            }
+        }
+        .body-copy{
+            @include phone{
+                margin: $separacion 0;
+            }
+        }
         
     }
     .imagen-evento{
