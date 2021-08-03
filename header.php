@@ -19,44 +19,80 @@
 <!-- SMART BAR -->
 <?php $url = get_template_directory_uri(  ); ?>
 <div class="smart-Bar bg-magenta">
-    <div class="contenedor d-flex-between">
-        <div class="texto-blanco d-flex-centrado">
-            <div class="">Domicilios:</div>
+    <div class="informacion-Pedidos contenedor d-flex-between">
+        <div class="domicilios-ifood texto-blanco">
+            <div class="titulo">Domicilios:</div>
             <div class="logo-ifood mx-1">
-                <img src= <?php echo $url . '/assets/img/IFood_logo.png' ?> alt="">
+                <a href="https://www.ifood.com.co/delivery/cali-vac/m--q-centro-centro/d8be5ce0-d816-4c04-817a-350d58cc5247" target="_blank">
+                    <img src= <?php echo $url . '/assets/img/IFood_logo.png' ?> alt="">
+                </a>
             </div>
         </div>
-        <div class="texto-amarillo d-flex-centrado">
-            <div class="mx-1">¿Necesitas un pedido grande? Comunícate al:</div>
-            <div class="texto-blanco texto-extrabold"><i class="fas fa-phone"> </i> 322 529 31 55</div>
-            <div class="icono-telefono ml-1">
-                <img src="src/img/telefono_icon-8.png" alt="">
-            </div>
+ 
+        <div class="pedidos">
+            <p class="texto-amarillo">¿Necesitas un pedido grande? Comunícate al:</p>
+            <div class="telefono texto-blanco texto-extrabold"><i class="fas fa-phone"> </i> 322 529 31 55</div>
         </div>   
     </div>
 </div>
 <!-- REDE SOCIALES -->
 <div class="redes-sociales rounded">
     <div class="iconos-redes d-flex-centrado texto-magenta cursor-pointer m-1">
-        <i class="icono fab fa-facebook"></i>
+        <a href="https://www.facebook.com/myq.unicosensabor" target="_blank">
+            <i class="icono fab fa-facebook"></i>
+        </a>
     </div>
     <div class="iconos-redes d-flex-centrado texto-magenta cursor-pointer m-1">
-        <i class="icono fab fa-instagram"></i>
+         <a href="https://www.instagram.com/myq.unicosensabor/" target="_blank">
+            <i class="icono fab fa-instagram"></i>
+        </a>
     </div>
     <div class="iconos-redes d-flex-centrado texto-magenta cursor-pointer m-1">
-        <i class="icono fab fa-whatsapp"></i>
+        <a href="https://api.whatsapp.com/send?phone=573225293155&text=Hola%2C%20los%20vi%20en%20la%20p%C3%A1gina%20web%20y%20quiero%20un%20pedido%20grande%20de%20sus%20productos.">
+            <i class="icono fab fa-whatsapp"></i>
+        </a>
     </div>
     
 </div>
 <!-- FIN REDE SOCIALES -->
 <!-- FIN SMART BAR -->
+<!-- HEADER RESPONSIVE -->
+<div class="menu-responsive">
+    <ul>
+        <div class="btn-negro cerrar-menu"><i class="fas fa-times"></i></div>
+        <?php 
+            wp_nav_menu( 
+                array(
+                    // Posicion
+                    'theme_location' => 'top_menu',
+                    // clases del menu
+                    'menu_class' => 'd-flex-between texto-bold texto-naranja',
+                    'container_class' => 'menu-principal',
+                )
+            )
+        ?>
+    </ul>
+</div>
+<div class="header-responsive">
+    <figure class="logo">
+        <a href="<?php echo home_url() ?>">
+            <img src=<?php echo $url . '/assets/img/Logo_M&Q-8.png' ?> alt="">
+        </a>
+    </figure>
+    <h3 class="texto-magenta texto-bold"><i class="fas fa-phone"></i> 322 529 31 55</h3>
+    <div id="boton-menu-responsive" class="cursor-pointer menu" value="holaaa">
+        <i class="fas fa-bars"></i>
+    </div>
+</div>
+<!-- FIN HEADER RESPONSIVE -->
 <!-- HEADER -->
 <header class="header-pc">
     <!-- NAV BAR PC -->
     <nav class="navbar-Pc contenedor d-flex-between">
-        
-        <div class="logo">
-            <img src=<?php echo $url . '/assets/img/Logo_M&Q-8.png' ?> alt="">
+        <div class="logo-menu">
+            <a href="<?php echo home_url() ?>">
+                <img src=<?php echo $url . '/assets/img/Logo_M&Q-8.png' ?> alt="">
+            </a>
         </div>
         <div class="menu-principal">
             <ul class="d-flex-between texto-bold texto-naranja">
@@ -98,7 +134,9 @@
     <nav class="navbar-fijo-Pc contenedor d-flex-between">
         <div class="logo-invisible"></div>
         <div class="logo">
-            <img src=<?php echo $url . '/assets/img/Logo_M&Q-8.png' ?> alt="">
+            <a href="<?php echo home_url() ?>">
+                <img src=<?php echo $url . '/assets/img/Logo_M&Q-8.png' ?> alt="">
+            </a>
         </div>
         <div class="menu-principal">
             <ul class="d-flex-between texto-bold">

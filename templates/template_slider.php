@@ -3,7 +3,7 @@
 <div class="slider d-flex-centrado">
         <!-- SLIDER COPY -->
         <div class="copy-slider">
-            <div class="texto-extrabg w-75 texto-der texto-extrabold">
+            <div class="body-copy texto-extrabg w-75 texto-der texto-extrabold">
                 <span class="texto-naranja">"Somos Únicos</span><br>
                 <span class="texto-magenta">en Sabor”</span>   
             </div>

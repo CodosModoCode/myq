@@ -1,6 +1,6 @@
 <!-- NUESTRAS SEDES -->
 <div class="nuestras-sedes mb-4">
-    <div class="contenedor nuestras-sedes-items py-3">
+    <div class="nuestras-sedes-items py-3">
         <div class="titulo-sedes titulo texto-md texto-amarillo texto-centrado"><i class="fas fa-map-marker-alt"></i> Nuestras Sedes</div>
 
         <?php
@@ -21,8 +21,8 @@
                  <!-- Card Sedes -->
                  <a href="<?php the_permalink( ) ?>">
                 <div class="card-sedes">
-                    <div class="imagen overflow-hidden">
-                        <img src=<?php echo $url . '/assets/img/imagen_sedes.png' ?> alt="">
+                    <div class="imagen">
+                        <?php the_post_thumbnail("medium") ?>
                     </div>
                     <div class="descripcion">
                         <div class="h2 texto-md texto-blanco"><?php the_field( 'nombre_de_la_sede' ); ?></div>

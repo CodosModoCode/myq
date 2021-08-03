@@ -28,12 +28,26 @@
             transition: .3s ease-in-out;
             animation-delay: .1s;
         }
+        @include phone {
+            display: none;
+        }
     }
     .copy-eventos{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         padding: $separacion $separacion*2;
+
+        .titulo{
+            @include phone{
+                margin-top: $separacion;
+            }
+        }
+        .body-copy{
+            @include phone{
+                margin: $separacion 0;
+            }
+        }
         
     }
     .imagen-evento{
@@ -53,5 +67,9 @@
             transform: scale(1.05);
             transform: translateX(30px);
         }
+    }
+    @include phone{
+        display: flex;
+        flex-direction: column;
     }
 }

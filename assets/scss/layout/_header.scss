@@ -25,7 +25,7 @@
         box-sizing: border-box;
         top: -180px;
         padding: $separacion;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 
         .logo{
             position: absolute;
@@ -69,13 +69,17 @@
             }
             
         }
+        @include  phone{
+            display: none;
+        }
+        
     }
         // nav bar
         .navbar-Pc{
             position: relative;
             z-index: 1;
             // padding: $separacion 0;
-            .logo{
+            .logo-menu{
                 background-color: $amarillo;
                 width: 130px;
                 border-radius: 0 0 $separacion $separacion;
@@ -114,6 +118,9 @@
                 }
                 
             }
+            @include phone{
+                display: none;
+            }
         }
     // slider
     .slider{
@@ -122,14 +129,38 @@
         z-index: 2;
         @include d-grid(2, $separacion *6);
 
+        @include phone{
+            margin-top: 80px;
+            @include d-grid(1, 0px);
+        }
+
         .copy-slider{
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+
+            @include phone{
+                justify-content: center;
+                align-items: center;
+                padding: $separacion*2 0;
+            }
+
+            .body-copy{
+                @include phone{
+                    text-align: center;
+                    font-size: $separacion*2.5;
+                    margin: $separacion 0;
+                }
+            }
+        }
+        p{
+            @include phone{
+                margin-bottom: $separacion;
+            }
         }
         // imagenes slider
         .Carrousel-slider{
-            background-color: $magenta;
+            // background-color: $magenta;
             border-radius: $separacion 0 0 0;
             overflow: hidden;
             position: relative;
@@ -161,12 +192,21 @@
             .imagenes-slider{
                 width: 100%;
                 height: 350px;
+
+                @include phone{
+                    height: 200px;
+                }
                 
                 img{
                     width: 100%;
                     min-width: 500px;  
                 }
             }
+
+            @include phone{
+                border-radius: 0;
+            }
         }
     }
+    
 }

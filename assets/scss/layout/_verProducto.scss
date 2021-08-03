@@ -5,6 +5,13 @@
     gap: 50px;
     margin-top: $separacion*1.5;
 
+    @include tablet{
+        margin-top: 100px;
+        flex-direction: column;
+        gap: $separacion;
+        align-items: flex-start;
+    }
+
     .vegetariano{
         background-color: lightgreen;
     }
@@ -13,6 +20,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: $separacion*1.5;
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+    }
 
     img{
         width: 100%;

@@ -3,13 +3,13 @@
     <div class="titulo texto-md texto-negro texto-centrado">
     <i class="fas fa-star"></i> Nuestros Productos Destacados
     </div>
-    <div class="contenedor d-flex-centrado">
+    <div class="contendor-productos">
 
         <?php
             $arg = array(
                 // nombre del post type creado en function.php
                 'post_type'             => 'producto',
-                'posts_per_page'         => 4,
+                'posts_per_page'         => 5,
                 'order'                 => 'ASC',
                 'orderby'               => 'date,'
             );

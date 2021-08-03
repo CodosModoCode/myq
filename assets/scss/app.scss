@@ -3,6 +3,7 @@
 @import 'base/variables';
 @import 'base/globales';
 @import 'base/mixing';
+@import 'base/responsiveDesign';
 @import 'base/ui';
 @import 'base/textos';
 @import 'base/botones';
@@ -10,12 +11,17 @@
 @import 'layout/smartBar';
 @import 'layout/header';
 @import 'layout/redesSociales';
+@import 'layout/headerResponsive';
 @import 'layout/footer';
 @import 'layout/home/productosDestacados';
 @import 'layout/home/eventos';
 @import 'layout/home/nuestrasSedes';
+@import 'layout/home/ofertaValor';
 @import 'layout/page/page';
 @import 'layout/single-sedes/singleSedes';
 @import 'layout/productos-destacados/categoria-productos-destacados';
 @import 'layout/sedes/categoria-sedes';
 @import 'layout/verProducto';
+
+
+

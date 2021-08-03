@@ -1,2 +1,15 @@
 user: admin_mq
 pass: yHKKYB5Xg3&ChIzeT@
+
+Base de datos en wordpress
+db: marketi_m&q
+user: marketi_admin 
+Pass: Cof3rm4R.Admin
+
+user: mkti@myq.com.co
+pass: MKTI.M&Q.2020
+
+base de datos:
+
+User:myqcomco_mkti
+Pass:MKTI.M&Q.2020

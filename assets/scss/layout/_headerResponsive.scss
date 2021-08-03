@@ -1,0 +1,70 @@
+.header-responsive{
+    display:  none;
+
+    
+    @include tablet{
+        z-index: 1000;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        position: fixed;
+        background-color: $amarillo;
+        margin: 0px;
+        padding: $separacion;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .logo{
+            margin: 0px;
+            max-width: 60px;
+        }
+        .menu{
+            color: $magenta;
+            font-size: $separacion*2;
+        }
+
+    }
+    
+}
+.menu-responsive{
+    position: absolute;
+    position: fixed;
+    top: -100vh;
+    z-index: 100000;
+    width: 100%;
+    height: 100vh;
+    // background-color: chartreuse;
+    background-color: $magenta;
+    // opacity: .9;
+    transition: .3s ease-in-out;
+
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            font-size: $separacion*1.5;
+            margin: $separacion*.8 0;
+            text-align: center;
+            color: $amarillo;
+            transition: .2s ease-in-out;
+            padding: $separacion*.2 $separacion*2;
+
+            &:hover{
+                background-color: $amarillo;
+                color: $magenta;
+                border-radius: $separacion 0 $separacion 0;
+            }
+        }
+    }
+}
+.menu-responsive-on{
+    top: 0 !important;
+}

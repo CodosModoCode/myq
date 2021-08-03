@@ -19,7 +19,7 @@ function navegacionFija() {
         }
     });
 
-    observer.observe(document.querySelector('.logo'));
+    observer.observe(document.querySelector('.logo-menu'));
 }
 
 // function scrollNav() {
