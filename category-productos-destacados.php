@@ -1,5 +1,8 @@
 <?php get_header(  );?>
-<div class="contenedor mt-2">
+<div class="contenedor producos-destacados mt-2">
+    <h1 class="texto-magenta"> Conoce nuestros productos destacados</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam similique eos, reiciendis soluta numquam quas deleniti, modi dolore dolorem tenetur? Doloremque reiciendis eius maxime.</p>
+    <hr class="my-2" style="opacity: .2;">
     <div class="post-catergorias">
         <?php
             if (have_posts(  )){

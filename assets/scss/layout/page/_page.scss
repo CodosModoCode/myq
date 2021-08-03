@@ -2,12 +2,22 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: $separacion*1.8;
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
     .contenido{
         // background-color: red;
         grid-column: 1/3;
     }
     h1{
         color: $magenta;
+        @include tablet{
+            margin: $separacion 0;
+        }
     }
     p{
         color: $negro;

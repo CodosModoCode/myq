@@ -1,7 +1,28 @@
+.producos-destacados{
+    h1{
+        margin-bottom: 10px;
+
+        @include phone{
+            margin-top: 90px;
+        }
+    }
+    p{
+        margin: $separacion 0;
+        font-size: $separacion;
+        color: $gris;
+    }
+}
+
 .post-catergorias{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: $separacion*2;
+
+    @include tablet{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
 
     .post-item{
         background-color: lighten($color: $beige, $amount: 10);

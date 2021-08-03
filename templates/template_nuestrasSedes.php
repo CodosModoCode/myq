@@ -22,7 +22,7 @@
                  <a href="<?php the_permalink( ) ?>">
                 <div class="card-sedes">
                     <div class="imagen">
-                        <img src=<?php echo $url . '/assets/img/imagen_sedes.png' ?> alt="">
+                        <?php the_post_thumbnail("medium") ?>
                     </div>
                     <div class="descripcion">
                         <div class="h2 texto-md texto-blanco"><?php the_field( 'nombre_de_la_sede' ); ?></div>

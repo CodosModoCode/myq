@@ -3,7 +3,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: $separacion*2;
 
-   
+   @include tablet{
+       margin-top: 100px;
+       display: flex;
+       flex-direction: column;
+    //    justify-content: center;
+   }
 
     .post-item{
         background-color: lighten($color: $beige, $amount: 10);
@@ -27,5 +32,9 @@
         max-width:100%;
         height:auto;
         border-radius: $separacion;
+
+        @include tablet{
+            border-radius: $separacion $separacion 0 0;
+        }
     }
 }
