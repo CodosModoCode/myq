@@ -1,0 +1,69 @@
+.tituloCombos{
+    font-size: 1.5rem;
+    color: $negro;
+    margin: 1rem 0;
+}
+.combosCard{
+    background: $amarillo;
+    border-radius: 0rem 2rem 0rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+    // cursor: pointer;
+    transition: .2s ease-in-out;
+    border: 4px #fff solid;
+    filter: drop-shadow(0 0 0px rgba(0,0,0,0));
+    height: 250px;
+
+    .titulo{
+        grid-column: 1/3;
+        font-size: 2.5rem;
+        color: $blanco;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        
+        h2{
+            color: $naranja;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .descripcion{
+            font-size: 1.5rem;
+            width: 90%;
+            margin: 0 auto;
+            color: $negro;
+            text-align: center;
+        }
+    }
+    .imagen{
+        background: $negro;
+        grid-column: 3/5;
+        border-radius: 0rem 2rem 0rem 2rem;
+        overflow: hidden;
+        height: 100%;
+
+
+        .precio{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: $magenta;
+            color: $blanco;
+            padding: 1rem;
+            z-index: 20;
+            font-size: 2rem;
+            font-weight: 600;
+            border-radius: 0rem 2rem 0rem 2rem;
+            border: 4px #fff solid;
+        }
+    }
+
+    &:hover{
+        filter: drop-shadow(0 0 20px rgba(0, 0, 0, .2));
+        // background-color: $blanco;
+    }
+}
