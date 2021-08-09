@@ -21,12 +21,12 @@
 <div class="smart-Bar bg-magenta">
     <div class="informacion-Pedidos contenedor d-flex-between">
         <div class="domicilios-ifood texto-blanco">
-            <div class="titulo">Domicilios:</div>
-            <div class="logo-ifood mx-1">
+            <!-- <div class="titulo">Domicilios:</div> -->
+            <!-- <div class="logo-ifood mx-1">
                 <a href="https://www.ifood.com.co/delivery/cali-vac/m--q-centro-centro/d8be5ce0-d816-4c04-817a-350d58cc5247" target="_blank">
                     <img src= <?php echo $url . '/assets/img/IFood_logo.png' ?> alt="">
                 </a>
-            </div>
+            </div> -->
         </div>
  
         <div class="pedidos">

@@ -8,11 +8,17 @@
     box-sizing: border-box;
     padding: 2rem;
     filter: drop-shadow(0 0 20px lighten($negro, 30));
-
+    
+    @include phone {
+        display: flex;
+        flex-direction: column;
+    }
+    
     .ofertValor_Titulo{
         grid-column: 1/5;
         text-align: center;
         color: $blanco;
+
 
         h3{
             font-weight: 600;

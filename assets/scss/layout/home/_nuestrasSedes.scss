@@ -19,6 +19,7 @@
         }
 
         .titulo-sedes{
+            font-size: 2rem;
             grid-column: 1/3;
 
             @include phone {

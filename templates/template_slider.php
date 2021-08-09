@@ -10,7 +10,8 @@
             <p class="texto-gris w-70 texto-der">
                 Tenemos un sabor único y especial.
             </p>
-            <div class="boton-ver-catalogo btn-magenta">Conoce Nuestro Catálogo</div>
+            <div class="boton-ver-catalogo btn-magenta my-2">
+                <a href="http://myq.com.co/wp-content/uploads/2021/07/Brochure-MQ-1-1.pdf" target="_blank">Conoce Nuestro Catálogo</a></div>
         </div>
         <!-- FIN SLIDER COPY -->
         <!-- IMAGENES SLIDER -->

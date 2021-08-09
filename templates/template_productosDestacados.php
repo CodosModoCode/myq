@@ -1,6 +1,6 @@
 <!-- PRODUCTOS DESTACADOS -->
 <section class="productos-destacados">
-    <div class="titulo texto-md texto-negro texto-centrado">
+    <div class="titulo texto-negro texto-centrado">
     <i class="fas fa-star"></i> Nuestros Productos Destacados
     </div>
     <div class="contendor-productos">
