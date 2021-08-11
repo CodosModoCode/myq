@@ -52,6 +52,6 @@
 
     <div class="btn-magenta mt-3">
         <!-- se linkea al link generado -->
-        <a href="<?php echo $category_link ; ?>">!Conoce nuestros productos Únicos en Sabor¡</a></div>
+        <a href="https://myq.com.co/category/combos/">¡Conoce nuestros combos y precios especiales!</a></div>
 </section>
 <!-- FIN PRODUCTOS DESTACADOS -->

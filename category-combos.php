@@ -1,36 +1,33 @@
 <?php get_header(  );?>
 <div class="contenedor mt-2">
-    <p class="tituloCombos">Conoce Nuestros Combos que tenemos para ti y disfruta de los pasteles Únicos en saber!</h2>
-    <div class="combosCard">
-        <div class="titulo">
-            <h2>Combo Parejas</h2>
-            <div class="descripcion">
-                <p>Maxi empanadas o pasteles de hojaldre + 1 pastel Gloria y dos bebidas</p>
-            </div>
-        </div>
+    <p class="tituloCombos">Conoce Nuestros Combos que tenemos para ti y disfruta de los pasteles Únicos en saber!</p>
+    
+    <?php
+    if(have_posts()){
+        while(have_posts()){
+            the_post();
+            ?>
+                <div class="combosCard">
+                        <div class="titulo">
+                            <h2><?php the_title(); ?></h2>
+                            <div class="descripcion">
+                                <p><?php the_content( );?></p>
+                            </div>
+                        </div>
 
-        <div class="imagen">
-            <img src="http://myq.com.co/wp-content/themes/myq/assets/img/M&Q_1.jpg" alt="">
-            <div class="precio">
-                $ 5000 pesos
-            </div>
-        </div>
-    </div>
-    <div class="combosCard">
-        <div class="titulo">
-            <h2>Combo Parejas</h2>
-            <div class="descripcion">
-                <p>Maxi empanadas o pasteles de hojaldre + 1 pastel Gloria y dos bebidas</p>
-            </div>
-        </div>
+                        <div class="imagen">
+                            <?php the_post_thumbnail('medium'); ?>
+                            <div class="precio">
+                                $ <?php the_field('precio')?>
+                            </div>
+                        </div>
+                    </div>
+            <?php
+        }
+    }
+    ?>
 
-        <div class="imagen">
-            <img src="http://myq.com.co/wp-content/themes/myq/assets/img/M&Q_1.jpg" alt="">
-            <div class="precio">
-                $ 5000 pesos
-            </div>
-        </div>
-    </div>
+   
     <!-- <div class="post-sedes">
         <?php
             if (have_posts(  )){

@@ -82,9 +82,10 @@
             .logo-menu{
                 background-color: $amarillo;
                 width: 130px;
-                border-radius: 0 0 $separacion $separacion;
+                // border-radius: 0 0 $separacion $separacion;
                 padding: $separacion;
-                transform: rotateZ(-20deg);
+                // transform: rotateZ(-20deg);
+                clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
             }
           
             ul li{

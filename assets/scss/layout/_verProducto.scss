@@ -3,7 +3,7 @@
     justify-content: start;
     align-items: center;
     gap: 50px;
-    margin-top: $separacion*1.5;
+    margin: 1rem 0;
 
     @include tablet{
         margin-top: 100px;
@@ -13,7 +13,7 @@
     }
 
     .vegetariano{
-        background-color: lightgreen;
+        background-color: rgb(23, 170, 23);
     }
 }
 .contenedor-productos{

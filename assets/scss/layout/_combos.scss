@@ -4,6 +4,7 @@
     margin: 1rem 0;
 }
 .combosCard{
+    margin: 1rem 0;
     background: $amarillo;
     border-radius: 0rem 2rem 0rem 2rem;
     display: grid;
@@ -11,7 +12,7 @@
     overflow: hidden;
     // cursor: pointer;
     transition: .2s ease-in-out;
-    border: 4px #fff solid;
+    border: 0px #fff solid;
     filter: drop-shadow(0 0 0px rgba(0,0,0,0));
     height: 250px;
 
@@ -46,6 +47,10 @@
         overflow: hidden;
         height: 100%;
 
+        img{
+            width: 100%;
+            height: auto;
+        }
 
         .precio{
             position: absolute;
