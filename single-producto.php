@@ -12,14 +12,14 @@
                         </div>
                     </div>
                     <div class="contenedor-productos">
-                        <div class=""><?php the_post_thumbnail( 'medium' ); ?></div>
+                        <div class=""><?php the_post_thumbnail( 'large' ); ?></div>
                         <div class="p-2">
                             <div class="">
                                 <h1 class="texto-magenta" style="font-size:3rem"><?php the_title( ); ?></h1>
                                 <em class="texto-gris">Categoría: <?php the_category( ) ?></em>
                                 <hr style="margin: 1rem 0">
                             </div>
-                            <div class="texto-negro">
+                            <div class="texto-negro" style="text-align: left;">
                                 <?php the_content( ); ?>
                             </div>
                         </div>

@@ -8,7 +8,7 @@
     }
     .footer-marketi{
         background-color: darken($color: $negro, $amount: 10);
-        color: lighten($color: $negro, $amount: 20);
+        color: $blanco;
         p{
             @include phone {
                 text-align: center;
@@ -30,12 +30,34 @@
         }
     }
     .logos-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         .icono{
             color: white;
             width: 30px;
             height: 30px;
-            margin: 0 10px;
+            margin: 20px 10px;
         }
         
+    }
+    .formulario{
+
+        .tituloFormulario{
+            color: $negro;
+            margin: 1rem 0rem;
+            padding: 1rem;
+        }
+        .enviar{
+            background-color: $magenta;
+            color: $blanco;
+            padding: 1rem 2rem;
+            width: 100%;
+            border: 0;
+            border-radius: 1rem;
+            margin: 1rem 0;
+            cursor: pointer !important;
+        }
     }
 }

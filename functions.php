@@ -118,10 +118,26 @@ function footer_centro(){
         )
     );
 }
+function footer_derecho(){
+    register_sidebar( 
+        array(
+            'name' => 'footer derecho',
+            'id'            => 'footer_derecho',
+            'description'   => 'Widget para la zona derecha del footer',
+            // el widget consta de 2 elementos: titulo y contenido (before)
+            'before_title' => '<p>',
+            'after_title' => '</p>',
+            // contenido del widget
+            'before_widget' => '<div id="%1$s" class="%2$s">',
+            'after_widget' => '</div>'
+        )
+    );
+}
 
 
 add_action( 'widgets_init', 'footer_izq' );
 add_action( 'widgets_init', 'footer_centro' );
+add_action( 'widgets_init', 'footer_derecho' );
 
 // CUSTON TYPE SEDES
 if ( ! function_exists('cpt_sedes') ) {

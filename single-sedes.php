@@ -12,9 +12,9 @@
                                 <p><span class="texto-extrabold texto-gris">Dirección:</span>  <?php the_field( 'direccion' ); ?></p>
                                 <p><span class="texto-extrabold texto-gris">Horario de Atención:</span><?php the_field( 'horario_de_atencion' ); ?>
                             </div>
-                            <hr class="color-gris my-2" style="opacity: .2;">
-                            <h3>Sobre Nuestra Sede</h3>
-                            <div class="texto-gris texto-sm"><?php the_content( );?></div>
+                            <hr class="color-gris mt-2" style="opacity: .2;">
+                            <h3 class="my-1 texto-bg">Sobre Nuestra Sede</h3>
+                            <div class="texto-gris contenido">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque sequi facere iusto autem eius aut illo non in illum, mollitia optio quia! Blanditiis, at. Sed?<?php the_content( );?></div>
                         </div>
                         <div class="">
                             <div class=""><?php the_post_thumbnail( 'medium' ); ?></div>
