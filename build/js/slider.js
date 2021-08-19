@@ -1,44 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // scrollNav();
-    navegacionFija();
-});
-
-function navegacionFija() {
-    
-    const menuFijo = document.querySelector('.navbar-fijo-Pc');
-    const logo = document.querySelector('.logo');
-    console.log(logo);
-    console.log(menuFijo);
-    const observer = new IntersectionObserver( function(entries) {
-        if(entries[0].isIntersecting) {
-            menuFijo.classList.remove('mover-menu');
-            console.log(menuFijo);
-        } else {
-            menuFijo.classList.add('mover-menu');
-            console.log(menuFijo);
-        }
-    });
-
-    observer.observe(document.querySelector('.logo-menu'));
-}
-
-// function scrollNav() {
-//     const enlaces = document.querySelectorAll('.navegacion-principal a');
-
-//     enlaces.forEach( function( enlace ) {
-//         enlace.addEventListener('click', function(e) {
-//             e.preventDefault();
-//             const seccion = document.querySelector(e.target.attributes.href.value);
-
-//             seccion.scrollIntoView({
-//                 behavior: 'smooth'
-//             });
-//         });
-//     });
-// }
-
-// SLIDER
-
 document.addEventListener('DOMContentLoaded', function(){
     asignarData();
     resetEstilos();
@@ -178,3 +137,92 @@ const sliderTiempo = () =>{
 setInterval(() => {
     sliderTiempo()
 }, 3000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.addEventListener('DOMContentLoaded', function(){
+//     asignarData();
+//     resetEstilos()
+// })
+
+// const sliders = document.querySelectorAll('.visual-slider');
+// const manejadores = document.querySelectorAll('.miniaruras');
+// const btnAnterior = document.querySelector('.manejador-izq')
+// let dataNum = 0
+// let listadoSlider = [];
+
+// const resetEstilos = () => {
+//     sliders.forEach(element => { 
+//         element.style.opacity = "0" 
+//     });
+//     let visible = sliders[0];
+//     visible.style.opacity="1"
+// }
+// const asignarData = () =>{
+//     sliders.forEach(element => {
+//         element.dataset.slider = dataNum;
+//         dataNum++ 
+//         // console.log (element)
+//     });
+//     dataNum = 0
+//     manejadores.forEach(ele => {
+//         ele.textContent = dataNum+1;
+//         ele.dataset.boton = dataNum
+//         // console.log(ele)
+//         dataNum++
+//     });
+// }
+// //  botones presionados
+// manejadores.forEach(element => {
+//     element.addEventListener("click", function(e){
+//         // quitar active
+//         manejadores.forEach(item => {
+//             item.classList.remove("active")
+//         });
+//         // poner active
+//         element.classList.add('active')
+//         let btnData = e.target.dataset.boton;
+//         sliders.forEach(element => {
+//             listadoSlider.push(element)
+//             element.style.opacity = '0';
+//             element.classList.remove('sliderActivo')
+//         });
+//         listadoSlider[btnData].style.opacity = '1'  
+//         listadoSlider[btnData].classList.add('sliderActivo')  
+//     })
+// });
+// const botonAnterior = () => {
+//     let slideActivo;
+//     sliders.forEach(element => {
+//         if (element.classList.contains('sliderActivo')){
+//             slideActivo = element.dataset.slider;
+//             console.log(slideActivo)
+//        }
+//     });
+    
+// }
+
+// btnAnterior.addEventListener('click', botonAnterior)
+// // cambio de tiempo
+// setInterval(() => {
+//     // console.log("hola")
+// }, 500);
+

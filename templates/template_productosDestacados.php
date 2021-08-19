@@ -9,7 +9,7 @@
             $arg = array(
                 // nombre del post type creado en function.php
                 'post_type'             => 'producto',
-                'posts_per_page'         => 5,
+                'posts_per_page'         => 20,
                 'order'                 => 'ASC',
                 'orderby'               => 'date,'
             );

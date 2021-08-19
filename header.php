@@ -30,7 +30,7 @@
         </div>
  
         <div class="pedidos">
-            <p class="texto-amarillo">¿Necesitas un pedido grande? Comunícate al:</p>
+            <p class="texto-amarillo">¿Necesitas un pedido grande? Comunícate al: </p>
             <div class="telefono texto-blanco texto-extrabold"><i class="fas fa-phone"> </i> 322 529 31 55</div>
         </div>   
     </div>

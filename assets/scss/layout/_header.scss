@@ -32,10 +32,10 @@
             background-color: $amarillo;
             width: 150px;
             top: 0;
-            // border-radius: 0 0 $separacion $separacion;
+            border-radius:$separacion;
             padding: $separacion;
             transition-delay: .2s;
-            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+            transform: rotateZ(-10deg) translateY(-20px);
         }
       
         ul li{
@@ -76,20 +76,38 @@
         
     }
         // nav bar
-        .navbar-Pc{
-            position: relative;
-            z-index: 1;
-            // padding: $separacion 0;
-            .logo-menu{
-                background-color: $amarillo;
-                width: 170px;
-                // border-radius: 0 0 $separacion $separacion;
-                padding: $separacion;
-                // transform: rotateZ(-20deg);
-                clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    .navbar-Pc{
+        position: relative;
+        z-index: 1;
+        // padding: $separacion 0;
+        .logo-menu{
+            background-color: $amarillo;
+            width: 170px;
+            border-radius: $separacion;
+            padding: $separacion;
+            transform: rotateZ(-10deg) translateY(-20px);
+            // clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        }
+        
+        ul li{
+            margin: 0 $separacion*.5;
+            transition: .2s ease-in;
+            cursor: pointer;
+            padding: $separacion *.5;
+            @include borde;
+
+            &:hover{
+                background-color: $negro;
+                color: $amarillo
             }
-          
+        }
+        .menu-principal{
+            @include borde;
+            
+        }
+        .menu-secundario{
             ul li{
+                color: $magenta;
                 margin: 0 $separacion*.5;
                 transition: .2s ease-in;
                 cursor: pointer;
@@ -97,34 +115,16 @@
                 @include borde;
     
                 &:hover{
-                    background-color: $negro;
-                    color: $amarillo
+                    background-color: $magenta;
+                    color: $blanco;
                 }
             }
-            .menu-principal{
-                @include borde;
-                
-            }
-            .menu-secundario{
-                ul li{
-                    color: $magenta;
-                    margin: 0 $separacion*.5;
-                    transition: .2s ease-in;
-                    cursor: pointer;
-                    padding: $separacion *.5;
-                    @include borde;
-        
-                    &:hover{
-                        background-color: $magenta;
-                        color: $blanco;
-                    }
-                }
-                
-            }
-            @include phone{
-                display: none;
-            }
+            
         }
+        @include phone{
+            display: none;
+        }
+    }
     // slider
     .slider{
         // background-color: lightgreen;

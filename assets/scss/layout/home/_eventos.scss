@@ -44,8 +44,9 @@
             }
         }
         .body-copy{
+            
+            margin: $separacion 0;
             @include phone{
-                margin: $separacion 0;
             }
         }
         
