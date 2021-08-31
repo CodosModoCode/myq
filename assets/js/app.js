@@ -22,22 +22,6 @@ function navegacionFija() {
     observer.observe(document.querySelector('.logo-menu'));
 }
 
-// function scrollNav() {
-//     const enlaces = document.querySelectorAll('.navegacion-principal a');
-
-//     enlaces.forEach( function( enlace ) {
-//         enlace.addEventListener('click', function(e) {
-//             e.preventDefault();
-//             const seccion = document.querySelector(e.target.attributes.href.value);
-
-//             seccion.scrollIntoView({
-//                 behavior: 'smooth'
-//             });
-//         });
-//     });
-// }
-
-// SLIDER
 
 document.addEventListener('DOMContentLoaded', function(){
     asignarData();
@@ -177,4 +161,4 @@ const sliderTiempo = () =>{
 // btnAnterior.addEventListener("click", sliderTiempo);
 setInterval(() => {
     sliderTiempo()
-}, 3000);
+}, 5000);

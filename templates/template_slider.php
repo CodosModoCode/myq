@@ -14,27 +14,49 @@
                 <a href="http://myq.com.co/wp-content/uploads/2021/07/Brochure-MQ-1-1.pdf" target="_blank">Conoce Nuestro Catálogo</a></div>
             </div>
         <!-- FIN SLIDER COPY -->
-        <!-- IMAGENES SLIDER -->
-        <div class="Carrousel-slider">
-            <div class="control-imagenes d-flex-between">
-                <div class="control"></div>
-                <div class="control"></div>
-                <div class="control"></div>
-                <div class="control"></div>
-            </div>
-            <div class="imagenes-slider">
-                <img src= <?php echo $url . '/assets/img/M&Q_1.jpg' ?> alt="">
-            </div>
-            <div class="imagenes-slider">
-                <img src= <?php echo $url . '/assets/img/M&Q_1.jpg' ?> alt="">
-            </div>
-            <div class="imagenes-slider">
-                <img src= <?php echo $url . '/assets/img/M&Q_1.jpg' ?> alt="">
-            </div>
-            <div class="imagenes-slider">
-                <img src= <?php echo $url . '/assets/img/M&Q_1.jpg' ?> alt="">
-            </div>
+
+        <!-- slider -->
+        <div class="sliderApp">
+        <?php
+            $arg = array(
+                // nombre del post type creado en function.php
+                'post_type'             => 'sliders',
+                'post_per_page'         => -1,
+                'order'                 => 'ASC',
+                'orderby'               => 'date,'
+            );
+        
+        $sedes = new WP_Query($arg);
+        
+        if($sedes->have_posts( )){
+            while($sedes->have_posts()){
+                $sedes->the_post(  );
+                ?>
+                <!-- slider 1 -->
+                <a href="<?php the_field( 'link' ); ?>">
+                <div data-slider class="visual-slider">
+                        <div class="titulo">
+                            <h3><?php the_title()?></h3>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, inventore?</p> -->
+                        </div>
+                        <?php $imagen = get_field( 'imagen' ); ?>
+                        <?php if ( $imagen ) : ?>
+                            <img src="<?php echo esc_url( $imagen['url'] ); ?>" alt="<?php echo esc_attr( $imagen['alt'] ); ?>" />
+                        <?php endif; ?>
+                    </div>
+                </a>
+                <div class="miniaruras"></div>
+            <!-- slider -->
+                <?php
+            }
+        }
+        
+        ?>
+            <!-- <div class="controles">
+            </div> -->
         </div>
+    </div>
+        <!-- fin slider demon slayer -->
         <!-- FIN IMAGENES SLIDER -->
     </div>
     </div>

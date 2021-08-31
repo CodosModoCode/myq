@@ -140,7 +140,7 @@ add_action( 'widgets_init', 'footer_izq' );
 add_action( 'widgets_init', 'footer_centro' );
 add_action( 'widgets_init', 'footer_derecho' );
 
-// CUSTON TYPE SEDES
+// CUSTON TYPE slider
 if ( ! function_exists('cpt_sedes') ) {
 
     // Register Custom Post Type
@@ -203,7 +203,74 @@ if ( ! function_exists('cpt_sedes') ) {
     }
     add_action( 'init', 'cpt_sedes', 0 );
     
+}
+
+// CUSTON TYPE SLIDER
+if ( ! function_exists('cpt_sliders') ) {
+
+    // Register Custom Post Type
+    function cpt_sliders() {
+    
+        $labels = array(
+            'name'                  => _x( 'sliders', 'Post Type General Name', 'text_domain' ),
+            'singular_name'         => _x( 'slide', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'             => __( 'sliders', 'text_domain' ),
+            'name_admin_bar'        => __( 'sliders', 'text_domain' ),
+            'archives'              => __( 'Archivo de sliders', 'text_domain' ),
+            'attributes'            => __( 'Atributos de slide', 'text_domain' ),
+            'parent_item_colon'     => __( 'slide padre', 'text_domain' ),
+            'all_items'             => __( 'Todas las sliders', 'text_domain' ),
+            'add_new_item'          => __( 'Añadir nueva slide', 'text_domain' ),
+            'add_new'               => __( 'Añadir slide', 'text_domain' ),
+            'new_item'              => __( 'Nueva slide', 'text_domain' ),
+            'edit_item'             => __( 'Editar slide', 'text_domain' ),
+            'update_item'           => __( 'Actualizar slide', 'text_domain' ),
+            'view_item'             => __( 'Ver slide', 'text_domain' ),
+            'view_items'            => __( 'Ver sliders', 'text_domain' ),
+            'search_items'          => __( 'Buscar sliders', 'text_domain' ),
+            'not_found'             => __( 'No Encontrado', 'text_domain' ),
+            'not_found_in_trash'    => __( 'No encontrado en papelera', 'text_domain' ),
+            'featured_image'        => __( 'Imagen Destacada', 'text_domain' ),
+            'set_featured_image'    => __( 'Configurar Imagen Destacada', 'text_domain' ),
+            'remove_featured_image' => __( 'Remover Imagen Destacada', 'text_domain' ),
+            'use_featured_image'    => __( 'Usar como imagen destacada', 'text_domain' ),
+            'insert_into_item'      => __( 'Intertar en la slide', 'text_domain' ),
+            'uploaded_to_this_item' => __( 'Actualizar en esta slide', 'text_domain' ),
+            'items_list'            => __( 'Listado de sliders', 'text_domain' ),
+            'items_list_navigation' => __( 'Lista Navegable de sliders', 'text_domain' ),
+            'filter_items_list'     => __( 'Filtro de lista de sliders', 'text_domain' ),
+        );
+        $args = array(
+            'label'                 => __( 'slide', 'text_domain' ),
+            'description'           => __( 'Diferentes sliders con la que cuenta m&q', 'text_domain' ),
+            'labels'                => $labels,
+            'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes' ),
+            'taxonomies'            => array( 'category', 'post_tag' ),
+            'hierarchical'          => false,
+            'public'                => true,
+            'show_ui'               => true,
+            'show_in_menu'          => true,
+            'menu_position'         => 10,
+            'menu_icon'             => 'dashicons-format-video',
+            'show_in_admin_bar'     => true,
+            'show_in_nav_menus'     => true,
+            'can_export'            => true,
+            'has_archive'           => true,
+            'exclude_from_search'   => false,
+            'publicly_queryable'    => true,
+            'capability_type'       => 'page',
+            // genera el editor de codigo gutember
+            'show_in_rest' => true,
+
+        );
+        register_post_type( 'sliders', $args );
+    
     }
+    add_action( 'init', 'cpt_sliders', 0 );
+    
+}
+
+
     // AGREGAR LAS TAXONOMIAS DE LOS CUSTON TYPE AL LOOP DE TAXONONIAS DE WORDPRESS
 
     function add_cpt_to_loop( $query ) {

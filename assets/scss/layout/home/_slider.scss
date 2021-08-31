@@ -1,145 +1,162 @@
 .sliderApp{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.contenedorApp{
     position: relative;
-    margin-top: 20px;
-    width: 90%;
-    height: 60vh;
-    filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.514));
-    border-radius: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    
-}
-.visual-sliderApp{
-    position: absolute;
-    transition: 1.2s ease-out;
-    background-color: rgb(224, 224, 224);
-    border-radius: 15px;
-    height: 250px;
-    width: 90%;
+    align-items: flex-start;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 400;
-    font-size: 80px;
-    color: rgb(129, 129, 129);
-    overflow: hidden;
-    filter: blur(10px);
-}
-.visual-sliderApp img{
+    // background-color: crimson;
+    height: 250px;
     width: 100%;
-}
-.visual-sliderApp::before{
-    content: '';
-    position: absolute;
-    height: 120%;
-    width: 120%;
-    background-color: rgb(31, 31, 31);
-    opacity: .5;
-    filter: blur(50px);
-}
-.titulo{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-}
-.titulo h3{
-    padding: 15px 30px;
-    border-radius: 15px;
-    font-weight: 400;
-    font-size: 60px;
-    padding: 0;
-    margin: 0;
-    color: white;
-    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
-}
-.titulo p{
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
-    color: #fff;
-}
-.manejador-izq{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: -60px;
-    top: calc(50% - 20px);
-    background-color: #000;
-    border-radius: 50%;
-}
-.btn-grande{
-    cursor: pointer;
-    transition: .1s ease;
-}
-.btn-grande:hover {
-    transform: scale(1.1);
-    background-color: #fff;
-    opacity: .8;
-}
-.manejador-der{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    right: -60px;
-    top: calc(50% - 20px);
-    background-color: #000;
-    border-radius: 50%;
-}
-.miniaruras{
-    
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(107, 107, 107);
-    width: 8px;
-    height: 8px;
-    margin: 10px;
-    /* bottom: 0; */
-    border-radius: 50%;
-    background-color: rgba(24, 24, 24, 0.212);
-    font-size: 12px;
-    transition: .8s ease-out;
-    /* filter: drop-shadow(1px 1px -2px #000); */
-}
-.miniaruras:hover{
-    background-color: rgb(151, 151, 151);
-}
-.controles{
-    position: absolute;
-    z-index: 20;
-    bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.off{
-    opacity: 0;
-}
-.on {
-    opacity: 1;
-}
-.active{
-    background-color: blanchedalmond;
-    color: black;
-    transform: scale(1.3);
-}
-.sliderAppActivo{
-    transform: scale(1.01);
-    filter: blur(0px);
+    // margin-bottom: 3px;
+    transform: translateY(7px);
+
+    .visual-slider{
+        position: absolute;
+        transition: 1.2s ease-out;
+        background-color: rgb(224, 224, 224);
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        left: 0;
+        bottom: 0;
+        align-items: center;
+        justify-content: start;
+        font-weight: 400;
+        font-size: 80px;
+        color: rgb(129, 129, 129);
+        overflow: hidden;
+        filter: blur(10px);
+        border-radius: 1rem 0rem 0rem 0rem;
+        // transform: translateY(-10px);
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+        // &::before{
+        //     content: '';
+        //     position: absolute;
+        //     height: 120%;
+        //     width: 120%;
+        //     background-color: rgb(31, 31, 31);
+        //     opacity: .5;
+        //     filter: blur(50px);
+        // } 
+    }
+    .titulo{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        bottom: 20px;
+        left: 30px;
+        width: 60%;
+        border-radius: 15px;
+        filter: drop-shadow(0px 0px 50px rgb(0, 0, 0));
+        display: inline-block;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $magenta;
+            opacity: .5;
+            z-index: 8;
+            border-radius: 10px;
+            filter: blur(2px);
+        }
+
+        h3 {
+            z-index: 10;
+            position: relative;
+            padding: 15px 30px;
+            font-weight: 400;
+            font-size: 30px;
+            padding: 10px 15px;
+            text-align: left !important;
+            margin: 0;
+            color: white;
+        }
+
+        p{
+            font-size: 15px;
+            padding: 0;
+            margin: 0;
+            color: #fff;
+        }
+    }
+    .manejador-izq{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: -60px;
+        top: calc(50% - 20px);
+        background-color: #000;
+        border-radius: 50%;
+    }
+    .btn-grande{
+        cursor: pointer;
+        transition: .1s ease;
+    }
+    .btn-grande:hover {
+        transform: scale(1.1);
+        background-color: #fff;
+        opacity: .8;
+    }
+    .manejador-der{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: -60px;
+        top: calc(50% - 20px);
+        background-color: #000;
+        border-radius: 50%;
+    }
+    .miniaruras{
+        z-index: 120;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15px;
+        height: 15px;
+        margin: 10px;
+        border-radius: 50%;
+        background-color: $magenta;
+        font-size: 12px;
+        transition: .8s ease-out;
+        border: 5px $amarillo solid;
+    }
+    .miniaruras:hover{
+        background-color: darken($color: $magenta, $amount: 20);
+    }
+    .controles{
+        position: absolute;
+        z-index: 120;
+        bottom: 20px;
+        left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $amarillo;
+        border-radius: 1rem;
+    }
+    .off{
+        opacity: 0;
+    }
+    .on {
+        opacity: 1;
+    }
+    .active{
+        background-color: $negro;
+        color: black;
+        transform: scale(1.3);
+    }
+    .sliderActivo{
+        transform: scale(1.01);
+        filter: blur(0px);
+        z-index: 100;
+
+    }
 }
