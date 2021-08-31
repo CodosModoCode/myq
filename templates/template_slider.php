@@ -12,7 +12,7 @@
             </p>
             <div class="boton-ver-catalogo btn-magenta my-2">
                 <a href="http://myq.com.co/wp-content/uploads/2021/07/Brochure-MQ-1-1.pdf" target="_blank">Conoce Nuestro Catálogo</a></div>
-        </div>
+            </div>
         <!-- FIN SLIDER COPY -->
         <!-- IMAGENES SLIDER -->
         <div class="Carrousel-slider">
@@ -23,9 +23,16 @@
                 <div class="control"></div>
             </div>
             <div class="imagenes-slider">
-            <!-- ./assets/img/M&Q_1.jpg -->
                 <img src= <?php echo $url . '/assets/img/M&Q_1.jpg' ?> alt="">
-                <!-- <img src= "wp-content/themes/myq/build/img/M&Q_1.jpg' ?>" alt=""> -->
+            </div>
+            <div class="imagenes-slider">
+                <img src= <?php echo $url . '/assets/img/M&Q_1.jpg' ?> alt="">
+            </div>
+            <div class="imagenes-slider">
+                <img src= <?php echo $url . '/assets/img/M&Q_1.jpg' ?> alt="">
+            </div>
+            <div class="imagenes-slider">
+                <img src= <?php echo $url . '/assets/img/M&Q_1.jpg' ?> alt="">
             </div>
         </div>
         <!-- FIN IMAGENES SLIDER -->

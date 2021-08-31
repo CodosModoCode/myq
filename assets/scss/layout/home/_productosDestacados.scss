@@ -115,6 +115,9 @@
         @include phone{
             margin: 0;
         }
+        .boton{
+            grid-column: 1/6;
+        }
     }
     
 }

@@ -276,3 +276,28 @@ function cpt_combos() {
 
 }
 add_action( 'init', 'cpt_combos', 0 );
+
+// AGREGAR UNA TAXONIMIA EN PRODUCTOS
+add_action( 'init', 'productosTaxonomia' );
+function productosTaxonomia(){
+    $arg = array(
+        // permite que tenga jerarquía de categorias
+        'hierarchical'  => true,
+        // Labels recibe un array con dos parámetros
+        // 1- nombre en plural
+        // 2- nombre en singular
+        'labels'            => array(
+            'name'          => 'Categorias de Productos',
+            'singular_name' => 'Categoría de Producto'
+        ),
+        // permite que sea mostrado en el menu principal
+        'show_in_nav_menu'  => true,
+        'show_admin_column' => true,
+        // rewrite: es la forma del slug
+        'rewrite'           => array('slug', 'categoria-productos')
+    );
+    // recibe 3 parámetros: 1- el slug de la taxonomía creada
+    // 2- los custom types a los que queremos que aparezca
+    // 3- Los argumentos configurados en la parte de arriba
+    register_taxonomy( 'categoria-productos', array ('producto'), $arg );
+}
